@@ -1,0 +1,40 @@
+﻿<Window x:Class="ClientsApp.ClientWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientsApp"
+        mc:Ignorable="d"
+        Title="Изменение/добавление клиента" Height="380" Width="550" FontSize="15">
+    <Grid>
+        <TextBox x:Name="FirstNameB" HorizontalAlignment="Left" Margin="35,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="25"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="35,28,0,0" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="LastNameB" HorizontalAlignment="Left" Margin="35,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="25"/>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="35,88,0,0" VerticalAlignment="Top" Width="200"/>
+        <ComboBox x:Name="GenComb" HorizontalAlignment="Left" Margin="280,57,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Мужчина</ComboBoxItem>
+            <ComboBoxItem>Женщина</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Пол" HorizontalAlignment="Left" Margin="280,28,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="CityComb" HorizontalAlignment="Left" Margin="35,183,0,0" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Город" HorizontalAlignment="Left" Margin="35,148,0,0" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="AddressB" HorizontalAlignment="Left" Margin="35,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="25"/>
+        <Label Content="Адрес" HorizontalAlignment="Left" Margin="35,214,0,0" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="NumberTextBox" HorizontalAlignment="Left" Margin="280,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"
+                 PreviewTextInput="NumberTextBox_PreviewTextInput" MaxLength="11"/>
+        <Label Content="телефон" HorizontalAlignment="Left" Margin="280,91,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="EmailB" HorizontalAlignment="Left" Margin="35,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="25"/>
+        <Label Content="Эл. почта" HorizontalAlignment="Left" Margin="35,279,0,0" VerticalAlignment="Top" Width="200"/>
+        <Button x:Name="AddB" Content="Добавить" HorizontalAlignment="Left" Margin="280,289,0,0" VerticalAlignment="Top" Width="120" Height="45" Click="AddB_Click"/>
+        <ComboBox x:Name="StatusB" HorizontalAlignment="Left" Margin="280,182,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Свободен</ComboBoxItem>
+            <ComboBoxItem>Занят</ComboBoxItem>
+            <ComboBoxItem>Не беспокоить</ComboBoxItem>
+            <ComboBoxItem>Не в сети</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Статус" HorizontalAlignment="Left" Margin="280,148,0,0" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="DateB" HorizontalAlignment="Left" Margin="284,243,0,0" VerticalAlignment="Top" Width="198"/>
+        <Label Content="Дата заключения договора" HorizontalAlignment="Left" Margin="284,213,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
